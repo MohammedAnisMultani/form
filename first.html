@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+<style>
+    body{
+        text-align: center;
+        background-color: #05c46b;
+        font-family: Verdana;
+    }
+    form{
+        background-color: #fff;
+        max-width: 500px;
+        margin: 50px auto;
+        padding: 30px 20px;
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+    .form-control{
+        text-align: left;
+        margin-bottom: 25px;
+        
+    }
+    .form-control label{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .form-control input,
+    .form-control select,
+    .form-control textarea {
+        border: 1px solid #777;
+        font-family: inherit;
+        border-radius: 5px;
+        padding: 5px; 
+        display: block;
+        width: 95%;
+    }
+    .form-control input[type="radio"],
+    .form-control input[type="checkbox"]{
+        display: inline-block;
+        width: auto;
+    }
+    button{
+        background-color: yellow;
+        color: black;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 50%;
+        border: 2px solid black;
+        border-radius: 5px;
+        font-size: 21px;
+        box-shadow: 2px 3px 10px black;
+    }
+</style>
+</head>
+<body>
+    <h1>Anis Survey Form</h1>
+    <form id="form">
+        <div class = "form-control">
+            <label for="name" id="label-name">
+                Name
+            </label>
+            <input type="text" 
+            id = "name"
+            placeholder = "Enter your name here"/>
+        </div>
+        <div class = "form-control">
+            <label for="email" id="label-email">
+                E-mail
+            </label>
+            <input type="text" 
+            id = "email"
+            placeholder = "Enter your email here"/>
+        </div>
+        <div class = "form-control">
+            <label for="age" id="label-age">
+                Age
+            </label>
+            <input type="text" 
+            id = "age"
+            placeholder = "Enter your age here"/>
+        </div>
+        <div class = "form-control">
+            <label for="role" id="label-role">
+                Which role best describes you?
+            </label>
+            <select name="role" id="role">
+                <option value="student">Student</option>
+                <option value="inter">internship</option>
+                <option value="professional">Professional</option>
+                <option value="others">Others</option>
+            </select>
+        </div>
+        <div class="form-control">
+            <label>Would you like to recommend my work to your friend</label>
+                <label for="recommend1">
+                    <input type="radio" name="recommend" id="recommend1">Yes</input>
+                </label>
+                <label for="recommend2">
+                    <input type="radio" name="recommend" id="recommend2">No</input>
+                </label>
+                <label for="recommend3">
+                    <input type="radio" name="recommend" id="recommend3">Maybe</input>
+                </label>
+        </div>
+        <div class="form-control">
+            <label>Prefered languages and frameworks</label>
+            <label for="inp1">
+                <input type="checkbox" name="inp" id="inp1">Java</input>
+            </label>
+            <label for="inp2">
+                <input type="checkbox" name="inp" id="inp2">c++</input>
+            </label>
+            <label for="inp3">
+                <input type="checkbox" name="inp" id="inp3">Javascript</input>
+            </label>
+            <label for="inp4">
+                <input type="checkbox" name="inp" id="inp4">c#</input>
+            </label>
+            <label for="inp5">
+                <input type="checkbox" name="inp" id="inp5">HTML</input>
+            </label>
+            <label for="inp6">
+                <input type="checkbox" name="inp" id="inp6">CSS</input>
+            </label>
+        </div>
+        <div class="form-control">
+            <label id="comment">Any suggestion for me</label>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        </div>
+        <button>Submit</button>
+    </form>
+    
+</body>
+</html>
